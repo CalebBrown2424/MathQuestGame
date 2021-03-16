@@ -6,39 +6,48 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="187dp"
-        android:layout_height="53dp"
+        android:id="@+id/SettingButton"
+        android:layout_width="189dp"
+        android:layout_height="33dp"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/LoadGameButton"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="187dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/StartGameButton"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/TItleView"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="187dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="15dp"
+        android:id="@+id/ExitGameButton"
+        android:layout_width="191dp"
+        android:layout_height="33dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/SettingButton"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageButton
+        android:id="@+id/LoadGameButton"
+        android:layout_width="187dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartGameButton"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/TItleView"
         android:layout_width="311dp"
         android:layout_height="171dp"
         android:layout_marginTop="15dp"
