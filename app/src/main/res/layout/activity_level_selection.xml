@@ -1,6 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:text="Level Selection"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="599dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/levelOneButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelTwoButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelThreeButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/levelFourButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelFiveButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/levelSixButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelSevenButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelEightButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelNineButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <ImageButton
+                    android:id="@+id/levelTenButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/bossLevelButton"
+                    android:layout_width="92dp"
+                    android:layout_height="95dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
