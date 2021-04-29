@@ -11,12 +11,8 @@ import android.widget.TextClock;
 import android.widget.TextView;
 
 public class FightActivity extends AppCompatActivity {
-    //Bundle bundle;
     int count = 0;
-    //TextView PlayerHealthTV;
-    //TextView EnemyHealthTV;
     TextView Timer;
-    //TextView AttDefTV;
     int answerTime;
     int initialFightMessageCounter;
     int answer;
@@ -29,11 +25,6 @@ public class FightActivity extends AppCompatActivity {
     int num3;
     int num4;
     int correctResponse;
-    Button answerBut1;
-    Button answerBut2;
-    Button answerBut3;
-    Button answerBut4;
-    //String levelLoaded;
     String level;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +36,6 @@ public class FightActivity extends AppCompatActivity {
         String levelLoaded = bundle.getString("data");
             level = levelLoaded;
             }
-
-        //Timer = findViewById(R.id.TimerTV);
-        //AttDefTV = findViewById(R.id.AttackOrDefendTV);
-        //PlayerHealthTV = findViewById(R.id.playerhealthtv);
-        //EnemyHealthTV = findViewById(R.id.enemyhealthtv);
         FightTime();
         FightStats();
     }
@@ -126,7 +112,6 @@ public class FightActivity extends AppCompatActivity {
             correctResponse = 0;
             Timer = findViewById(R.id.TimerTV);
             Timer.setVisibility(View.VISIBLE);
-            //AttDefTV.setVisibility(View.VISIBLE);
             new CountDownTimer(answerTime, 1000) {
                 int TimerCount = answerTimeCountdown;
 
@@ -135,9 +120,7 @@ public class FightActivity extends AppCompatActivity {
 
                     TimerCount--;
                     Timer.setText(String.valueOf(TimerCount));
-
                 }
-
                 @Override
                 public void onFinish() {
                     if (correctResponse == 0) {
@@ -193,12 +176,8 @@ public class FightActivity extends AppCompatActivity {
 
                             correctResponse = 0;
                         }
-
-
                         TextView EnemyHealthTV = findViewById(R.id.enemyhealthtv);
                         EnemyHealthTV.setText("Health: " + String.valueOf(EnemyHealth));
-
-
                     }
                 });
                 answerBut4.setOnClickListener(new View.OnClickListener() {
@@ -209,12 +188,10 @@ public class FightActivity extends AppCompatActivity {
                             correctResponse = 1;
                             clicked++;
                         }else {
-
                             correctResponse = 0;
                         }
                         TextView EnemyHealthTV = findViewById(R.id.enemyhealthtv);
                         EnemyHealthTV.setText("Health: " + String.valueOf(EnemyHealth));
-
                     }
                 });
             }

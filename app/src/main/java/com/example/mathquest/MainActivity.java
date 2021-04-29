@@ -23,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LoadGamebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                //String data = editText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, savesactivity.class);
-                //intent.putExtra("data", data);
                 startActivity(intent);
 
             }
@@ -38,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         StartGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, WorldsActivity.class);
                 startActivity(intent);
 
