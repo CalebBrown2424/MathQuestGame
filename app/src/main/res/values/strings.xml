@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MathQuest</string>
+    <string name="StartGameText">Start Game</string>
+    <string name="LoadGameText">Load Game</string>
+    <string name="SettingsTextMain">Settings</string>
+    <string name="ExitGameMainText">Exit Game</string>
+    <string name="LevelSelectionText">Select Level</string>
+    <string name="SpecialAbility">Special!</string>
+    <string name="Timer">TimerNum</string>
 </resources>

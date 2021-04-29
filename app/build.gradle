@@ -3,8 +3,16 @@ plugins {
 }
 
 android {
+   // signingConfigs {
+     //   mathquest {
+       //     storeFile file('C:\\Program Files\\Android\\Android Studio\\jre\\jre\\bin\\server\\jvm.dll')
+      //      storePassword '12345678'
+        //    keyAlias '12345678'
+       //     keyPassword '12345678'
+        //}
+   // }
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.example.mathquest"
@@ -22,10 +30,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+   // compileOptions {
+    //    sourceCompatibility JavaVersion.VERSION_1_8
+    //    targetCompatibility JavaVersion.VERSION_1_8
+   // }
 }
 
 dependencies {

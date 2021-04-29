@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathquestlogo__1_">
+
+    <ImageButton
+        android:id="@+id/SettingButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/game_assets_wood_gui_game_button_86036700__1__removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/StartGameButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829"
+        app:srcCompat="@drawable/game_assets_wood_gui_game_button_86036700__1__removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/ExitGameButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        app:srcCompat="@drawable/game_assets_wood_gui_game_button_86036700__1__removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/LoadGameButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783"
+        app:srcCompat="@drawable/game_assets_wood_gui_game_button_86036700__1__removebg_preview" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/metamorphous"
+        android:gravity="center"
+        android:text="@string/StartGameText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StartGameButton"
+        app:layout_constraintEnd_toEndOf="@+id/StartGameButton"
+        app:layout_constraintStart_toStartOf="@+id/StartGameButton"
+        app:layout_constraintTop_toTopOf="@+id/StartGameButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/metamorphous"
+        android:gravity="center"
+        android:text="@string/LoadGameText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LoadGameButton"
+        app:layout_constraintEnd_toEndOf="@+id/LoadGameButton"
+        app:layout_constraintStart_toStartOf="@+id/LoadGameButton"
+        app:layout_constraintTop_toTopOf="@+id/LoadGameButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/metamorphous"
+        android:gravity="center"
+        android:text="@string/SettingsTextMain"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SettingButton"
+        app:layout_constraintEnd_toEndOf="@+id/SettingButton"
+        app:layout_constraintStart_toStartOf="@+id/SettingButton"
+        app:layout_constraintTop_toTopOf="@+id/SettingButton" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/metamorphous"
+        android:gravity="center"
+        android:text="@string/ExitGameMainText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ExitGameButton"
+        app:layout_constraintEnd_toEndOf="@+id/ExitGameButton"
+        app:layout_constraintStart_toStartOf="@+id/ExitGameButton"
+        app:layout_constraintTop_toTopOf="@+id/ExitGameButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

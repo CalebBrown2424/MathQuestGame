@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButtonAddition"
         android:layout_width="92dp"
         android:layout_height="95dp"
         android:layout_marginStart="25dp"
@@ -32,7 +32,7 @@
         android:layout_height="95dp"
         android:layout_marginStart="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAddition"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
 
