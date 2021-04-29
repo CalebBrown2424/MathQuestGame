@@ -22,6 +22,7 @@ public class FightActivity extends AppCompatActivity {
     int answer;
     int PlayerHealth;
     int EnemyHealth;
+    int clicked;
     int answerTimeCountdown;
     int num1;
     int num2;
@@ -55,7 +56,7 @@ public class FightActivity extends AppCompatActivity {
 
     public void FightTime() {
         final TextView problemTV = findViewById(R.id.ProblemTextView);
-        new CountDownTimer(10000, 1000) {
+        new CountDownTimer(7000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 //int count = 0;
@@ -122,7 +123,7 @@ public class FightActivity extends AppCompatActivity {
             answerBut2.setText(String.valueOf(num2));
             answerBut3.setText(String.valueOf(num3));
             answerBut4.setText(String.valueOf(num4));
-            //correctResponse = 0;
+            correctResponse = 0;
             Timer = findViewById(R.id.TimerTV);
             Timer.setVisibility(View.VISIBLE);
             //AttDefTV.setVisibility(View.VISIBLE);
@@ -131,6 +132,7 @@ public class FightActivity extends AppCompatActivity {
 
                 @Override
                 public void onTick(long millisUntilFinished) {
+
                     TimerCount--;
                     Timer.setText(String.valueOf(TimerCount));
 
@@ -146,13 +148,14 @@ public class FightActivity extends AppCompatActivity {
                     setProblems();
                 }
             }.start();
-
+                clicked = 0;
                 answerBut1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (num1 == answer) {
+                        if (num1 == answer&& clicked != 1) {
                             EnemyHealth--;
                             correctResponse = 1;
+                            clicked++;
                         }else {
 
                             correctResponse = 0;
@@ -164,9 +167,11 @@ public class FightActivity extends AppCompatActivity {
                 answerBut2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (num2 == answer) {
+
+                        if (num2 == answer&& clicked != 1) {
                             EnemyHealth--;
                             correctResponse = 1;
+                            clicked++;
                         }else {
 
                             correctResponse = 0;
@@ -180,9 +185,10 @@ public class FightActivity extends AppCompatActivity {
                 answerBut3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (num3 == answer) {
+                        if (num3 == answer&& clicked != 1) {
                             EnemyHealth--;
                             correctResponse = 1;
+                            clicked++;
                         }else {
 
                             correctResponse = 0;
@@ -198,10 +204,10 @@ public class FightActivity extends AppCompatActivity {
                 answerBut4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (num4 == answer) {
+                        if (num4 == answer&& clicked != 1) {
                             EnemyHealth--;
                             correctResponse = 1;
-
+                            clicked++;
                         }else {
 
                             correctResponse = 0;
