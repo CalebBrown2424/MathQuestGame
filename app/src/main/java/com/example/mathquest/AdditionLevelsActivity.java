@@ -24,6 +24,8 @@ int levels;
         loadLevel8();
         loadLevel9();
         loadLevel10();
+        loadLevel11();
+
     }
 
 
@@ -34,10 +36,11 @@ int levels;
                        level1button.setOnClickListener(new View.OnClickListener() {
                            @Override
                            public void onClick(View view) {
-                               String data  = "one";
+                               int data  = 1;
                                Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
+                               intent.putExtra("data", data);
                                startActivity(intent);
-                                intent.putExtra("data", data);
+
                            }
                        });
 
@@ -51,8 +54,9 @@ int levels;
                         public void onClick(View view) {
                             int data  = 2;
                             Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                            startActivity(intent);
                             intent.putExtra("data", data);
+                            startActivity(intent);
+
                         }
                     });
 
@@ -66,8 +70,9 @@ int levels;
                         public void onClick(View view) {
                             int data  = 3;
                             Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                            startActivity(intent);
                             intent.putExtra("data", data);
+                            startActivity(intent);
+
                         }
                     });
 
@@ -81,8 +86,9 @@ int levels;
                         public void onClick(View view) {
                             int data  = 4;
                             Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                            startActivity(intent);
                             intent.putExtra("data", data);
+                            startActivity(intent);
+
                         }
                     });
 
@@ -96,8 +102,9 @@ int levels;
                         public void onClick(View view) {
                             int data  = 5;
                             Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                            startActivity(intent);
                             intent.putExtra("data", data);
+
+                            startActivity(intent);
                         }
                     });
 
@@ -111,8 +118,8 @@ int levels;
                        public void onClick(View view) {
                            int data  = 6;
                            Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                           startActivity(intent);
                            intent.putExtra("data", data);
+                           startActivity(intent);
                        }
                    });
 
@@ -126,8 +133,8 @@ int levels;
                        public void onClick(View view) {
                            int data  = 7;
                            Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                           startActivity(intent);
                            intent.putExtra("data", data);
+                           startActivity(intent);
                        }
                    });
 
@@ -141,8 +148,9 @@ int levels;
                        public void onClick(View view) {
                            int data  = 8;
                            Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                           startActivity(intent);
                            intent.putExtra("data", data);
+                           startActivity(intent);
+
                        }
                    });
 
@@ -156,8 +164,8 @@ int levels;
                        public void onClick(View view) {
                            int data  = 9;
                            Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                           startActivity(intent);
                            intent.putExtra("data", data);
+                           startActivity(intent);
                        }
                    });
 
@@ -171,11 +179,25 @@ int levels;
                        public void onClick(View view) {
                            int data  = 10;
                            Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
-                           startActivity(intent);
                            intent.putExtra("data", data);
+                           startActivity(intent);
                        }
                    });
 
                }
+    public void loadLevel11()
+    {
+        ImageButton level1button = findViewById(R.id.bossLevelButton);
 
+        level1button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int data  = 11;
+                Intent intent = new Intent(AdditionLevelsActivity.this, FightActivity.class);
+                intent.putExtra("data", data);
+                startActivity(intent);
+            }
+        });
+
+    }
 }
