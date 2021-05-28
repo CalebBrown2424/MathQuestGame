@@ -111,7 +111,7 @@ int levels;
                 }
                public void loadLevel6()
                {
-                   ImageButton level1button = findViewById(R.id.levelSixButton1);
+                   ImageButton level1button = findViewById(R.id.levelSixButton);
 
                    level1button.setOnClickListener(new View.OnClickListener() {
                        @Override

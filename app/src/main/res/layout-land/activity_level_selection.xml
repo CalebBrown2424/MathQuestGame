@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundlevels"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mathquestadditionmapbackground">
@@ -13,6 +14,7 @@
         android:fontFamily="@font/metamorphous"
         android:gravity="center"
         android:text="@string/LevelSelectionText"
+        android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,7 +101,7 @@
         app:srcCompat="@drawable/mathquestlevelbutton5_removebg_preview" />
 
     <ImageButton
-        android:id="@+id/levelTenButton"
+        android:id="@+id/levelSixButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_weight="1"
@@ -107,11 +109,11 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.652"
-        app:srcCompat="@drawable/mathquestlevelbutton10_removebg_preview" />
+        app:srcCompat="@drawable/mathquestlevelbutton6_removebg_preview" />
 
     <ImageButton
         android:id="@+id/levelSevenButton"
@@ -144,21 +146,6 @@
         app:srcCompat="@drawable/mathquestlevelbutton8_removebg_preview" />
 
     <ImageButton
-        android:id="@+id/levelSixButton1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_weight="1"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652"
-        app:srcCompat="@drawable/mathquestlevelbutton6_removebg_preview" />
-
-    <ImageButton
         android:id="@+id/levelNineButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -172,6 +159,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.628"
         app:srcCompat="@drawable/mathquestlevelbutton9_removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/levelTenButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652"
+        app:srcCompat="@drawable/mathquestlevelbutton10_removebg_preview" />
 
     <ImageButton
         android:id="@+id/bossLevelButton"

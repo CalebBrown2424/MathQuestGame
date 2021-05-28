@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".LevelResultsActivity"
-            android:screenOrientation="landscape"></activity>
+        <activity android:name=".BossLevelsActivity"></activity>
+        <activity android:name=".DivisionLevelsActivity" />
+        <activity android:name=".MultiplicationLevelsActivity" />
+        <activity android:name=".SubtractionLevelsActivity" />
+        <activity
+            android:name=".LevelResultsActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".FightActivity"
             android:screenOrientation="landscape" />

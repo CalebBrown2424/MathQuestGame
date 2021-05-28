@@ -4,80 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@drawable/worldselectionbg">
 
     <TextView
         android:id="@+id/TitleView"
-        android:layout_width="225dp"
-        android:layout_height="108dp"
+        android:layout_width="173dp"
+        android:layout_height="117dp"
         android:fontFamily="@font/metamorphous"
         android:gravity="center"
         android:text="World Selection"
         android:textColor="#000000"
-        android:textSize="36sp"
+        android:textSize="27sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAddition"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639"
+        app:srcCompat="@drawable/mathquestlevelbutton1_removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSubtraction"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639"
+        app:srcCompat="@drawable/mathquestlevelbutton2_removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBoss"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/mathquestlevelbutton5_removebg_preview" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMultiplication"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        app:layout_constraintVertical_bias="0.623"
+        app:srcCompat="@drawable/mathquestlevelbutton3_removebg_preview" />
 
     <ImageButton
-        android:id="@+id/imageButtonAddition"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonAddition"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="88dp"
+        android:id="@+id/imageButtonDivision"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/mathquestlevelbutton4_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
