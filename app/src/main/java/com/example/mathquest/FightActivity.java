@@ -1873,6 +1873,8 @@ public class FightActivity extends AppCompatActivity {
         }
     }
     public void FightAction() {
+        TextView EnemyHealthTV = findViewById(R.id.enemyhealthtv);
+        EnemyHealthTV.setText("Health: " + String.valueOf(EnemyHealth));
         bundle = getIntent().getExtras();
         int levelLoaded = bundle.getInt("data");
         level = levelLoaded;
@@ -1898,6 +1900,8 @@ public class FightActivity extends AppCompatActivity {
 
                 @Override
                 public void onFinish() {
+                    TextView EnemyHealthTV = findViewById(R.id.enemyhealthtv);
+                    EnemyHealthTV.setText("Health: " + String.valueOf(EnemyHealth));
                     if(clicked == 0)
                     {
                         PlayerHealth--;
@@ -2044,11 +2048,14 @@ public void FightStats()
             {
                 ImageView enemy =(ImageView) findViewById(R.id.enemyView);
                 enemy.setBackgroundResource(R.drawable.mutiplicationmonster);
+
             }
             else if (level == 33)
             {
                 ImageView enemy =(ImageView) findViewById(R.id.enemyView);
                 enemy.setBackgroundResource(R.drawable.multiplicationboss);
+
+
             }
         }
         if(level > 33 && level <= 44)

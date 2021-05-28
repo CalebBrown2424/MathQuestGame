@@ -82,6 +82,3 @@ ImageView star3;
         });
     }
 }
-
-
-//Need t

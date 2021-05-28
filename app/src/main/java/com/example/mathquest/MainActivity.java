@@ -13,18 +13,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        configureSavesButton();
+        configureExitButton();
         configureStartGameButton();
 
     }
-    private void configureSavesButton()
+    private void configureExitButton()
     {
-        ImageButton LoadGamebutton = findViewById(R.id.LoadGameButton);
+        ImageButton LoadGamebutton = findViewById(R.id.ExitGameButton);
         LoadGamebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, savesactivity.class);
-                startActivity(intent);
+                Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+                homeIntent.addCategory( Intent.CATEGORY_HOME );
+                homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(homeIntent);
 
             }
         });
